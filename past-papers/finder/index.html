@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>題目查找｜KW DSE Maths 資源網</title>
+  <meta name="description" content="KW DSE Maths 資源網——歷屆 DSE 題目元數據查找（必修＋M2）。" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+  <link rel="stylesheet" href="finder.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="../../index.html">
+        <strong>KW DSE Maths 資源網</strong>
+        <span>課堂 · 學生資源目錄</span>
+      </a>
+      <nav class="nav" aria-label="主要導覽">
+        <a href="../../index.html">首頁</a>
+        <a href="../../notes/">筆記</a>
+        <a href="../../practice/">練習卷</a>
+        <a href="../" aria-current="page">歷屆 DSE</a>
+        <a href="../../calculator/">計數機 Program</a>
+        <a href="../../videos/">教學示範影片</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="hero">
+      <div class="badge">題目查找</div>
+      <h1>題目查找</h1>
+      <p>按年份、科目、卷別、題號與課題篩選歷屆 DSE 數學（必修＋M2）題目索引。本頁只顯示元數據；題目、答案與詳細解說經 Classroom／Drive 登入後開啟。</p>
+    </section>
+
+    <p class="note finder-note">
+      <strong>使用說明：</strong>開啟「Classroom／Drive」連結前請先以 Google 帳戶登入，並確保你已加入課堂班別。
+      本站公開頁<strong>只索引元數據</strong>（年份、卷別、題號、課題、狀態），<strong>不會</strong>放上試題全文、答案或詳細題解。
+    </p>
+
+    <section class="panel" aria-labelledby="filters-heading">
+      <h2 id="filters-heading">篩選</h2>
+      <form class="filters" id="filters" action="#" onsubmit="return false;">
+        <div class="field">
+          <label for="filter-year">年份（必選）</label>
+          <select id="filter-year" name="year" required></select>
+        </div>
+        <div class="field">
+          <label for="filter-subject">科目</label>
+          <select id="filter-subject" name="subject">
+            <option value="all">全部</option>
+            <option value="compulsory">必修</option>
+            <option value="m2">M2</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="filter-paper">卷別</label>
+          <select id="filter-paper" name="paper">
+            <option value="all">全部</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="filter-number">題號搜尋</label>
+          <input id="filter-number" name="number" type="search" placeholder="例如 Q3 或 3" autocomplete="off" />
+        </div>
+        <div class="field field-wide">
+          <label for="filter-topic">課題</label>
+          <select id="filter-topic" name="topic">
+            <option value="all">全部</option>
+          </select>
+        </div>
+      </form>
+    </section>
+
+    <div id="finder-loading" class="finder-loading">載入題目索引中…</div>
+
+    <div class="results-meta" id="results-meta" aria-live="polite"></div>
+
+    <div class="results-grid" id="results-grid" hidden></div>
+
+    <div class="empty-state" id="empty-state" hidden>
+      <strong>沒有符合條件的題目</strong>
+      試吓改篩選條件。
+    </div>
+
+    <nav class="pagination" id="pagination" aria-label="結果分頁" hidden>
+      <button type="button" class="btn btn-secondary" id="page-prev">上一頁</button>
+      <span class="page-info" id="page-info"></span>
+      <button type="button" class="btn btn-secondary" id="page-next">下一頁</button>
+    </nav>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">© KW DSE Maths 資源網 · 教材檔案稍後經 Google Drive／Classroom（需登入）連結</div>
+  </footer>
+  <script src="finder.js" defer></script>
+</body>
+</html>
