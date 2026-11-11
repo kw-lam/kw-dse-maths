@@ -4,8 +4,23 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>計數機 Program｜KW DSE Maths 資源網</title>
-  <meta name="description" content="KW DSE Maths 資源網——課堂與學生用的數學資源目錄。" />
+  <meta name="description" content="KW DSE Maths 資源網——課堂用的非官方 HKDSE 風格科學計數機模擬器，以及計數機程式目錄。" />
   <link rel="stylesheet" href="../assets/css/style.css" />
+  <style>
+    a.btn-primary {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
+      padding: 0.7rem 1.2rem;
+      border-radius: 999px;
+      text-decoration: none;
+      margin-top: 0.35rem;
+    }
+    a.btn-primary:hover { text-decoration: none; filter: brightness(1.08); }
+    .attrib { font-size: 0.9rem; }
+    .attrib a { word-break: break-all; }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -29,16 +44,37 @@
     <section class="hero">
       <div class="badge">計數機 Program</div>
       <h1>計數機 Program</h1>
-      <p>課堂與考試常用計數機程式目錄。</p>
+      <p>課堂練習用的非官方 HKDSE 風格科學計數機模擬器，以及常用計數機程式目錄。</p>
     </section>
+
     <section class="panel">
-      <h2>資源列表</h2>
+      <h2>HKDSE 風格科學計數機模擬器</h2>
+      <p>此模擬器按鍵序列跟從 fx-50FH II，方便課堂練習 COMP／CMPLX／BASE／SD／REG／PRGM、內建公式與 Program Studio。可於瀏覽器直接使用，無需安裝。</p>
+      <p><a class="btn-primary" href="sim/">進入模擬器 →</a></p>
+      <p class="note">這是<strong>非官方</strong>網頁模擬器，並非 Casio 官方產品，亦<strong>不是考評局核准的考試用機</strong>。不可代替考試現場的實體核准計數機。重要結果請以實體核准計數機覆核。</p>
+    </section>
+
+    <section class="panel">
+      <h2>來源與授權</h2>
+      <p class="attrib">模擬器原始碼來自 <a href="https://github.com/throwingogo-hub/fx-50fh-ii">throwingogo-hub/fx-50fh-ii</a>（MIT License，Copyright © 2026 throwingogo-hub）。本站自行託管副本，授權全文見 <a href="sim/LICENSE">sim/LICENSE</a>，說明見 <a href="sim/NOTICE">sim/NOTICE</a>。</p>
+      <p class="attrib">並未收錄上游的 Casio 產品相片。機面以作者生成的重建圖為底，上架前已除去 CASIO、fx-50FH II、SUPER-FX PLUS、H.K.E.A.A. APPROVED 等字樣。<strong>本模擬器仍為非官方練習工具，不代表官方產品或考評局核准。</strong>「CASIO」「fx-50FH II」「SUPER-FX PLUS」為 Casio 商標，在此僅作說明。</p>
+    </section>
+
+    <section class="panel">
+      <h2>計數機程式資源</h2>
+      <p>模擬器內的 Program Studio 已附上游 MIT 授權的免費 HKDSE 程式庫（非 CalcX 付費目錄）。以下位置預留日後補上課堂 Drive／Classroom 連結。</p>
       <div class="table-wrap">
         <table>
           <thead><tr><th>名稱</th><th>說明</th><th>狀態</th><th>連結</th></tr></thead>
           <tbody>
             <tr>
-              <td>（待上架）</td>
+              <td>模擬器內建程式庫</td>
+              <td>Program Studio → Library（上游免費目錄）</td>
+              <td><span class="status ready">可在模擬器使用</span></td>
+              <td><a href="sim/">開啟模擬器</a></td>
+            </tr>
+            <tr>
+              <td>（其他課堂程式）</td>
               <td>程式名稱與用途稍後補上</td>
               <td><span class="status">待補連結</span></td>
               <td class="placeholder">Drive／Classroom 稍後補上</td>
