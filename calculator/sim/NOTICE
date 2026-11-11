@@ -1,0 +1,60 @@
+NOTICE
+======
+
+This directory hosts a self-hosted copy of the open-source web calculator
+from https://github.com/throwingogo-hub/fx-50fh-ii
+(upstream demo: https://throwingogo-hub.github.io/fx-50fh-ii/).
+
+Attribution
+-----------
+- The source code is licensed under the MIT License.
+  Copyright (c) 2026 throwingogo-hub.
+  The original LICENSE text is kept intact in LICENSE in this directory.
+- This site copy is provided by KW DSE Maths 資源網 for classroom practice.
+  It is not the upstream project, and it is not affiliated with the author
+  beyond using their MIT-licensed code.
+
+What is not included
+--------------------
+- The CASIO product photograph `assets/fx-50fh-ii.png` from the upstream
+  repository is deliberately NOT included. That image is a CASIO product
+  photograph, is not covered by the MIT licence, and must not be copied
+  or published.
+- Material from CalcX (https://hanprprpcal.pages.dev/), including its
+  faceplate artwork, programs.html shop, analytics, and paid program
+  catalogue, is not included.
+
+Faceplate artwork
+-----------------
+The shell background started from the author's generated reconstruction
+`assets/fx-50fh-ii-generated-transparent.png` (the file the upstream CSS
+already references). Before hosting on this site, the visible markings
+「CASIO」, 「fx-50FH II」, 「SUPER-FX PLUS」 and 「H.K.E.A.A. APPROVED」
+were removed from that image and replaced with neighbouring metal texture.
+The Casio product photograph was never used.
+
+Removing those marks does not make this page an official Casio product,
+or an HKEAA-approved examination device.
+
+「CASIO」, 「fx-50FH II」 and 「SUPER-FX PLUS」 are trademarks of
+CASIO Computer Co., Ltd., and are mentioned here only to record what was
+removed.
+
+Disclaimer (unofficial / not an exam device)
+--------------------------------------------
+This is an unofficial web simulator for practice. It is intended to
+follow the key sequences of the fx-50FH II family for HKDSE maths
+practice, but:
+
+- It is not an official Casio calculator.
+- It is not an HKEAA-approved examination device.
+- It must not be used in place of a physical approved calculator in
+  an examination.
+- Important results should be checked on a physical approved calculator.
+
+本目錄為自行託管的開源網頁計數機模擬器副本。原始碼來自
+throwingogo-hub/fx-50fh-ii，以 MIT 授權；授權全文見同目錄 LICENSE。
+並未收錄上游的 CASIO 產品相片 `assets/fx-50fh-ii.png`。所用機面圖以
+作者生成的重建圖為底，上架前已除去 CASIO、fx-50FH II、SUPER-FX PLUS
+及 H.K.E.A.A. APPROVED 字樣。此並不代表本頁為官方產品或考評局核准用機。
+本模擬器僅供課堂練習，並非考試用機。重要結果請以實體核准計數機覆核。
